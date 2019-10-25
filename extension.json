@@ -1,8 +1,17 @@
 {
   "id": "table-ui-extension",
-  "name": "table-ui-extension",
+  "name": "Table UI Extension",
   "srcdoc": "./build/index.html",
-  "fieldTypes": [
-    "Object"
-  ]
+  "fieldTypes": ["Object"],
+  "parameters": {
+    "instance": [
+      {
+        "id": "headers",
+        "name": "Table headers",
+        "description": "Set which headers are rquired for this table (comma separated)",
+        "type": "Symbol",
+        "required": true
+      }
+    ]
+  }
 }
