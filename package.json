@@ -20,18 +20,6 @@
     "lint-staged": "^9.4.2",
     "prettier": "^1.18.2"
   },
-  "scripts": {
-    "start": "contentful-extension-scripts start",
-    "build": "contentful-extension-scripts build",
-    "lint": "eslint ./ --ext .js,.jsx,.ts,.tsx",
-    "test": "contentful-extension-scripts test --env=jsdom --watch",
-    "test:coverage": "contentful-extension-scripts test --env=jsdom --coverage",
-    "deploy": "npm run build && contentful extension update --force",
-    "configure": "contentful space use && contentful space environment use",
-    "login": "contentful login",
-    "logout": "contentful logout",
-    "help": "contentful-extension-scripts help"
-  },
   "dependencies": {
     "@contentful/forma-36-fcss": "^0.0.20",
     "@contentful/forma-36-react-components": "^3.11.3",
@@ -52,10 +40,22 @@
     }
   },
   "lint-staged": {
-    "*.{js,jsx}": [
+    "*.{js,jsx,html,css}": [
       "eslint",
       "prettier --write",
       "git add"
     ]
+  },
+  "scripts": {
+    "start": "contentful-extension-scripts start",
+    "build": "contentful-extension-scripts build",
+    "lint": "eslint ./ --ext .js,.jsx,.ts,.tsx",
+    "test": "contentful-extension-scripts test --env=jsdom --watch",
+    "test:coverage": "contentful-extension-scripts test --env=jsdom --coverage",
+    "deploy": "npm run build && contentful extension update --force",
+    "configure": "contentful space use && contentful space environment use",
+    "login": "contentful login",
+    "logout": "contentful logout",
+    "help": "contentful-extension-scripts help"
   }
 }
