@@ -8,3 +8,9 @@ div {
   font: inherit;
   vertical-align: baseline;
 }
+
+.table-field-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}

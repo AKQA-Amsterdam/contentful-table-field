@@ -7,7 +7,8 @@ import {
   TableRow,
   TableBody,
   TableCell,
-  TextInput
+  TextInput,
+  Button
 } from '@contentful/forma-36-react-components';
 import { init } from 'contentful-ui-extensions-sdk';
 import '@contentful/forma-36-react-components/dist/styles.css';
@@ -69,47 +70,58 @@ const App = ({ sdk }) => {
     return out;
   };
 
+  const addRow = () => {
+    const rowData = rows.slice(0);
+    rowData.push(getNewRow());
+    setRows(rowData);
+    // In timeout to allow for new row to render before setting focus
+    setTimeout(() => {
+      firstCellOfLastRow.current.focus();
+    }, 0);
+  };
+
   const checkIfLastCell = (e, row, col) => {
     if (e.keyCode === 9 && row === rows.length - 1 && col === columns.length - 1) {
       e.preventDefault();
-      const rowData = rows.slice(0);
-      rowData.push(getNewRow());
-      setRows(rowData);
-      // In timeout to allow for new row to render before setting focus
-      setTimeout(() => {
-        firstCellOfLastRow.current.focus();
-      }, 0);
+      addRow();
     }
   };
 
   return (
-    <Table>
-      <TableHead>
-        <TableRow>
-          {columns.map(h => (
-            <TableCell key={h}>{h}</TableCell>
-          ))}
-        </TableRow>
-      </TableHead>
-      <TableBody>
-        {rows.map((r, rIdx) => (
-          <TableRow key={`row-${rIdx}`}>
-            {r.map((cell, cIdx) => (
-              <TableCell key={`cell-${rIdx}-${cIdx}`}>
-                <TextInput
-                  type="text"
-                  value={cell}
-                  width="full"
-                  onChange={e => updateCell(rIdx, cIdx, e.target.value)}
-                  onKeyDown={e => checkIfLastCell(e, rIdx, cIdx)}
-                  inputRef={rIdx === rows.length - 1 && cIdx === 0 && firstCellOfLastRow}
-                />
-              </TableCell>
+    <div>
+      <Table>
+        <TableHead>
+          <TableRow>
+            {columns.map(h => (
+              <TableCell key={h}>{h}</TableCell>
             ))}
           </TableRow>
-        ))}
-      </TableBody>
-    </Table>
+        </TableHead>
+        <TableBody>
+          {rows.map((r, rIdx) => (
+            <TableRow key={`row-${rIdx}`}>
+              {r.map((cell, cIdx) => (
+                <TableCell key={`cell-${rIdx}-${cIdx}`}>
+                  <TextInput
+                    type="text"
+                    value={cell}
+                    width="full"
+                    onChange={e => updateCell(rIdx, cIdx, e.target.value)}
+                    onKeyDown={e => checkIfLastCell(e, rIdx, cIdx)}
+                    inputRef={rIdx === rows.length - 1 && cIdx === 0 && firstCellOfLastRow}
+                  />
+                </TableCell>
+              ))}
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
+      <div className="table-field-actions ">
+        <Button className="new-row-cta" buttonType="muted" size="small" onClick={addRow}>
+          Add new row
+        </Button>
+      </div>
+    </div>
   );
 };
 
