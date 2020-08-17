@@ -14,7 +14,7 @@ import '@contentful/forma-36-react-components/dist/styles.css';
 import './index.css';
 
 const App = ({ sdk }) => {
-  const columns = sdk.parameters.instance.headers.split(',');
+  const columns = sdk.parameters.instance.headers.split(',').map(v => v.trim());
   const firstCellOfLastRow = useRef();
 
   const getNewRow = () => columns.map(() => '');
