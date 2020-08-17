@@ -15,7 +15,7 @@ import './index.css';
 
 const App = ({ sdk }) => {
   const columns = sdk.parameters.instance.headers.split(',');
-  const firstCellOfLastRow = useRef(null);
+  const firstCellOfLastRow = useRef();
 
   const getNewRow = () => columns.map(() => '');
 
@@ -34,8 +34,10 @@ const App = ({ sdk }) => {
     sdk.window.startAutoResizer();
 
     const onExternalChange = value => {
-      const rowData = getRowsFromExistingObject(value);
-      setRows(rowData);
+      if (value) {
+        const rowData = getRowsFromExistingObject(value);
+        setRows(rowData);
+      }
     };
 
     const detachExternalChangeHandler = sdk.field.onValueChanged(onExternalChange);
@@ -47,15 +49,16 @@ const App = ({ sdk }) => {
     };
   }, [sdk]);
 
-  const updateCell = (row, column, value) => {
+  const updateCell = async (row, column, value) => {
     const rowData = rows.slice(0);
     rowData[row][column] = value;
     setRows(rowData);
-    sdk.field.setValue(buildTableDataArray());
+    const formattedData = buildTableDataArray();
+    await sdk.field.setValue(formattedData);
   };
 
   const buildTableDataArray = () => {
-    return rows.reduce((acc, curr) => {
+    const out = rows.reduce((acc, curr) => {
       acc.push(
         curr.reduce((a, c, i) => {
           return { ...a, [columns[i]]: c };
@@ -63,6 +66,7 @@ const App = ({ sdk }) => {
       );
       return acc;
     }, []);
+    return out;
   };
 
   const checkIfLastCell = (e, row, col) => {
