@@ -846,12 +846,12 @@
     read-pkg-up "^6.0.0"
     semver "^6.1.1"
 
-"@contentful/forma-36-fcss@^0.0.20":
-  version "0.0.20"
-  resolved "https://registry.yarnpkg.com/@contentful/forma-36-fcss/-/forma-36-fcss-0.0.20.tgz#346e9229ce9c39519d1b47a540db2a6fcfd471e8"
-  integrity sha512-czXsm4lLTnsFXseMoNeZsFfRccTKNXF0PNP34Ij3BhH6BDR9iPbSoyLUnYGO1qezfyK9hkpy3+L8AqYOjjgUGA==
+"@contentful/forma-36-fcss@^0.2.7":
+  version "0.2.7"
+  resolved "https://registry.yarnpkg.com/@contentful/forma-36-fcss/-/forma-36-fcss-0.2.7.tgz#2d2067d9163ff34e8ea551aa9fa2de7ed24abfd3"
+  integrity sha512-ni88X2ZYyNglGnrh8XDb8AxM2Km8yf5mvHFzVF4k4dusLBSbcjd1AJcXXnN4lisHwHGxGeroqZNosgYdxI/Sng==
   dependencies:
-    "@contentful/forma-36-tokens" "^0.3.0"
+    "@contentful/forma-36-tokens" "^0.8.0"
 
 "@contentful/forma-36-react-components@^3.11.3":
   version "3.21.0"
@@ -871,6 +871,11 @@
   version "0.3.3"
   resolved "https://registry.yarnpkg.com/@contentful/forma-36-tokens/-/forma-36-tokens-0.3.3.tgz#a01ffbb7c0b5606a0e39880d0afb2c5a02700a35"
   integrity sha512-wk1ufpSjot9O1/Zea+6VQ+jZlOIgxA9p8tA8/x9Tpkff+c7R7crWRhS2VLl49jbYtK9B7kEKGluTZx6CtYJazg==
+
+"@contentful/forma-36-tokens@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@contentful/forma-36-tokens/-/forma-36-tokens-0.8.0.tgz#0c8ff7435bd771a2bd3422d68d1e46f742421c0f"
+  integrity sha512-+/DxXhXZ7Tb0sdN1s2KoDD71ffw0WENeGizLtLH/GZC/hAv7+jFtUzaWC6Ty7HGDZD0AryTBBq4PiCUwlS89PA==
 
 "@iarna/toml@^2.2.0":
   version "2.2.3"
