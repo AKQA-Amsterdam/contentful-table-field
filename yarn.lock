@@ -872,6 +872,11 @@
   resolved "https://registry.yarnpkg.com/@contentful/forma-36-tokens/-/forma-36-tokens-0.3.3.tgz#a01ffbb7c0b5606a0e39880d0afb2c5a02700a35"
   integrity sha512-wk1ufpSjot9O1/Zea+6VQ+jZlOIgxA9p8tA8/x9Tpkff+c7R7crWRhS2VLl49jbYtK9B7kEKGluTZx6CtYJazg==
 
+"@contentful/forma-36-tokens@^0.8.0":
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/@contentful/forma-36-tokens/-/forma-36-tokens-0.8.0.tgz#0c8ff7435bd771a2bd3422d68d1e46f742421c0f"
+  integrity sha512-+/DxXhXZ7Tb0sdN1s2KoDD71ffw0WENeGizLtLH/GZC/hAv7+jFtUzaWC6Ty7HGDZD0AryTBBq4PiCUwlS89PA==
+
 "@iarna/toml@^2.2.0":
   version "2.2.3"
   resolved "https://registry.yarnpkg.com/@iarna/toml/-/toml-2.2.3.tgz#f060bf6eaafae4d56a7dac618980838b0696e2ab"
