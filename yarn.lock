@@ -801,14 +801,7 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@babel/runtime@^7.1.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5":
-  version "7.6.3"
-  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.6.3.tgz#935122c74c73d2240cafd32ddb5fc2a6cd35cf1f"
-  integrity sha512-kq6anf9JGjW8Nt5rYfEuGRaEAaH1mkv3Bbu6rYvLOpPh/RusSJXuKPEAoZ7L7gybZkchE8+NV5g9vKF4AGAtsA==
-  dependencies:
-    regenerator-runtime "^0.13.2"
-
-"@babel/runtime@^7.10.2":
+"@babel/runtime@^7.1.2", "@babel/runtime@^7.10.2", "@babel/runtime@^7.3.4", "@babel/runtime@^7.4.5", "@babel/runtime@^7.5.5":
   version "7.11.2"
   resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.11.2.tgz#f549c13c754cc40b87644b9fa9f09a6a95fe0736"
   integrity sha512-TeWkU52so0mPtDcaCTxNBI/IHiz0pZgr8VEFqXFtZWpYD08ZB6FaSwVAS8MKRQAP3bYKiVjwysOJgMFY28o6Tw==
@@ -938,14 +931,13 @@
   dependencies:
     "@contentful/forma-36-tokens" "^0.8.0"
 
-"@contentful/forma-36-react-components@^3.11.3":
-  version "3.21.0"
-  resolved "https://registry.yarnpkg.com/@contentful/forma-36-react-components/-/forma-36-react-components-3.21.0.tgz#787cb10d78a623ab660edd0c1130a5e5a0cbc96c"
-  integrity sha512-bmgNH+4nPC/IxKBbbZVjNh6bcGtU/dUggg+yGBVkqRJWS5WZfE3PcPt2HghiBdFn4QhA1SgTlHEs3bnCWle0rg==
+"@contentful/forma-36-react-components@^3.51.0":
+  version "3.51.0"
+  resolved "https://registry.yarnpkg.com/@contentful/forma-36-react-components/-/forma-36-react-components-3.51.0.tgz#1aed8e04af75a7526293099f636e0f660eaee0f3"
+  integrity sha512-nZFWX7mB9WRdKmsthTiDX4gHQOboJL/7UcI7ptDipNFmYLbBBxO6hxJHpQPPFxRxW3NKNsKE/JbpvvZDU1X9fQ==
   dependencies:
     "@babel/runtime" "^7.3.4"
     classnames "^2.2.6"
-    prop-types "^15.7.2"
     react-animate-height "^2.0.7"
     react-copy-to-clipboard "^5.0.1"
     react-modal "3.6.1"
@@ -7985,11 +7977,6 @@ regenerator-runtime@^0.12.0:
   version "0.12.1"
   resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.12.1.tgz#fa1a71544764c036f8c49b13a08b2594c9f8a0de"
   integrity sha512-odxIc1/vDlo4iZcfXqRYFj0vpXFNoGdKMAUieAlFYO6m/nl5e9KR/beGf41z4a1FI+aQgtjhuaSlDxQ0hmkrHg==
-
-regenerator-runtime@^0.13.2:
-  version "0.13.3"
-  resolved "https://registry.yarnpkg.com/regenerator-runtime/-/regenerator-runtime-0.13.3.tgz#7cf6a77d8f5c6f60eb73c5fc1955b2ceb01e6bf5"
-  integrity sha512-naKIZz2GQ8JWh///G7L3X6LaQUAMp2lvb1rvwwsURe/VXwD6VMfr+/1NuNw3ag8v2kY1aQ/go5SNn79O9JU7yw==
 
 regenerator-runtime@^0.13.4:
   version "0.13.7"
