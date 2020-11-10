@@ -24,7 +24,7 @@
     "@contentful/forma-36-fcss": "^0.2.7",
     "@contentful/forma-36-react-components": "^3.51.0",
     "@contentful/forma-36-tokens": "^0.8.0",
-    "contentful-ui-extensions-sdk": "^3.18.0",
+    "contentful-ui-extensions-sdk": "^3.25.0",
     "prop-types": "^15.7.2",
     "react": "^16.8.6",
     "react-dom": "^16.13.0"
