@@ -2663,12 +2663,10 @@ contentful-sdk-core@^6.4.5:
     lodash "^4.17.10"
     qs "^6.5.2"
 
-contentful-ui-extensions-sdk@^3.18.0:
-  version "3.18.0"
-  resolved "https://registry.yarnpkg.com/contentful-ui-extensions-sdk/-/contentful-ui-extensions-sdk-3.18.0.tgz#9811a74f0f4f8aa72c008904cf1fdcf6165c16b7"
-  integrity sha512-UugVg/urkd/J9ciDiO4R3D1CK1Z606Nf5VPizWpaHDP5dm4jlbsUwnpPade2JfYfYNORfF1DJZl636Kch9P6NQ==
-  dependencies:
-    es6-promise "^4.2.8"
+contentful-ui-extensions-sdk@^3.33.0:
+  version "3.33.0"
+  resolved "https://registry.yarnpkg.com/contentful-ui-extensions-sdk/-/contentful-ui-extensions-sdk-3.33.0.tgz#62b5b2adaa2e8254ad3d27a5a490c2777b6c6d34"
+  integrity sha512-cFmZg+2pmzqpLvgx/5BvYUOD16/5muPzySUz8pUAuF4ddmZbLyu025rWoXItH+CqnHJLCFirTDaj/WLSFENhDA==
 
 contentful@^7.14.0:
   version "7.14.6"
@@ -3418,7 +3416,7 @@ es-to-primitive@^1.2.0:
     is-date-object "^1.0.1"
     is-symbol "^1.0.2"
 
-es6-promise@^4.0.3, es6-promise@^4.2.8:
+es6-promise@^4.0.3:
   version "4.2.8"
   resolved "https://registry.yarnpkg.com/es6-promise/-/es6-promise-4.2.8.tgz#4eb21594c972bc40553d276e510539143db53e0a"
   integrity sha512-HJDGx5daxeIvxdBxvG2cb9g4tEvwIk3i8+nhX0yGrYmZUzbkdg8QbDevheDB8gd0//uPj4c1EQua8Q+MViT0/w==
